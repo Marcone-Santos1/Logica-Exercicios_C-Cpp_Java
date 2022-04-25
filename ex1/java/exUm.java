@@ -1,6 +1,9 @@
 package ex1.java;
 
-import java.util.Scanner;
+
+import java.util.Calendar;
+
+import javax.swing.JOptionPane;
 
 public class exUm {
     public static void main(String[] args) {
@@ -10,28 +13,27 @@ public class exUm {
         (Ex: 3 anos, 2 meses e 15 dias = 1170 dias.)
          */
 
+        Calendar c1 = Calendar.getInstance();
 
-        final short DIAS_NO_ANO = 365;
-		final short DIAS_NO_MES = 30;
-		short dias;
-		short meses;
-		short anos;
-		try (Scanner leitor = new Scanner(System.in)) {
-            System.out.println("Informe a sua idade.");
 
-            System.out.print("Anos: ");
-            anos = leitor.nextShort();
-            
-            System.out.print("Meses: ");
-            meses = leitor.nextShort();
-            
-            System.out.print("Dias: ");
-            dias = leitor.nextShort();
-        }
+        int DIAS_NO_ANO = 365;
+		int DIAS_NO_MES = 30;
+		int dias;
+		int meses;
+		int anos;
+
+        int anoAtual = c1.get(Calendar.YEAR);
+        
+
+        anos = Integer.parseInt(JOptionPane.showInputDialog(null, "Ano de nascimento: "));
+        
+        meses = Integer.parseInt(JOptionPane.showInputDialog("Mês de nascimento: "));
+        
+        dias = Integer.parseInt(JOptionPane.showInputDialog("Dia de nascimento: "));
 		
-		dias += (anos * DIAS_NO_ANO) + (meses * DIAS_NO_MES);
+		dias += ((anoAtual - anos) * DIAS_NO_ANO) + (meses * DIAS_NO_MES);
 		
-		System.out.println("\n\nA sua idade em dias é " + dias + ", idade em anos = " + ((dias / 12) / 30));
+		JOptionPane.showMessageDialog(null, "A sua idade em dias é " + dias);
 
 
     }
