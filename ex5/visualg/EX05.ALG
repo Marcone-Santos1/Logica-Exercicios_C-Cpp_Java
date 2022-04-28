@@ -16,6 +16,6 @@ Leia(salarioMinimo)
 Escreval("Valor do salário do usuário: ")
 Leia(salarioUsuario)
 
-Escreval("Ele possui R$", (salarioUsuario / salarioMinimo), " salário minímo")
+Escreval("Ele possui ", (salarioUsuario / salarioMinimo), " salário minímo")
 
 Fimalgoritmo
