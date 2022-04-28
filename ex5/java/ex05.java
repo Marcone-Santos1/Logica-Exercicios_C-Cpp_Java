@@ -8,11 +8,13 @@ public class ex05 {
         float salario, salarioMinimo, quantSalario;
 
         salario = Float.parseFloat(JOptionPane.showInputDialog(null, "Entre com o seu salário"));
-        salarioMinimo = Float.parseFloat(JOptionPane.showInputDialog(null, "Entre com o seu salário minímo"));
+        salarioMinimo = 788.00f;
+
+
 
         quantSalario = salario / salarioMinimo;
         
-        JOptionPane.showMessageDialog(null, "Ele recebe: " + quantSalario);
+        JOptionPane.showMessageDialog(null, "Ele recebe: " + String.format("%.2f", quantSalario) + " salárioMinimo");
 
     }
 }

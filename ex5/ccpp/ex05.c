@@ -8,8 +8,7 @@ int main(int argc, char *argv[]){
     printf("Entre com o seu salário: ");
     scanf("%f", &salario);    
 
-    printf("Entre com o salário mínimo: ");
-    scanf("%f", &salarioMinimo);
+    salarioMinimo = 788.00;
 
     quantSalario = salario / salarioMinimo;
 

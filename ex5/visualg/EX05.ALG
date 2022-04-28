@@ -1,21 +1,21 @@
 Algoritmo "ex05"
-// Disciplina   : [Linguagem e Lógica de Programação]
+// Disciplina   : [Linguagem e Lï¿½gica de Programaï¿½ï¿½o]
 // Professor   : Antonio Carlos Nicolodi 
-// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Descriï¿½ï¿½o   : Aqui vocï¿½ descreve o que o programa faz! (funï¿½ï¿½o)
 // Autor(a)    : Nome do(a) aluno(a)
 // Data atual  : 28/4/2022
 Var
-// Seção de Declarações das variáveis 
+// Seï¿½ï¿½o de Declaraï¿½ï¿½es das variï¿½veis 
 salarioMinimo, salarioUsuario: real
 
 Inicio
-// Seção de Comandos, procedimento, funções, operadores, etc... 
-Escreval("Valor do salário minímo: ")
-Leia(salarioMinimo)
+// Seï¿½ï¿½o de Comandos, procedimento, funï¿½ï¿½es, operadores, etc... 
 
-Escreval("Valor do salário do usuário: ")
+Escreval("Valor do salï¿½rio do usuï¿½rio: ")
 Leia(salarioUsuario)
 
-Escreval("Ele possui ", (salarioUsuario / salarioMinimo), " salário minímo")
+salarioMinimo <- 788
+
+Escreval("Ele possui ", (salarioUsuario / salarioMinimo), " salï¿½rio minï¿½mo")
 
 Fimalgoritmo
